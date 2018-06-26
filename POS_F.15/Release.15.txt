@@ -223,7 +223,7 @@ PERQemu is available for download from github.com/skeezicsb/PERQemu.
 This is the first POS release since the creation of the  World Wide Web.
 Additional resources such as documentation  and software updates,  user-
 contributed software, downloads of future releases and  up-to-the-minute
-news will be available online at <TBD>.
+news will be available online at https://github.com/skeezicsb/PERQmedia.
 
 A very useful archive of PERQ documentation and software is available
 through the Bitsavers Archive, at http://www.bitsavers.org.

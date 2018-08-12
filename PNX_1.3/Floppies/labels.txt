@@ -1,0 +1,71 @@
+install.pfd:
+
+!POS FORMAT!
+
+UNIX/PNX 1.0 Installation Instructions
+
+5/2/83
+
+
+pnx0.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 0.1
+Boot Floppy
+
+
+pnx1.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 1.1
+C Compiler
+
+
+pnx2.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 2.1
+C Language Support
+
+
+pnx3.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 3.1
+Utilities
+
+
+pnx4.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 4.1
+Utilities
+
+
+pnx5.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 5.1
+Utilities
+
+
+pnx6.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 6.1
+Manual
+
+
+pnx7.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 7.1
+Manual
+
+
+pnx10.1.pfd:
+
+PNX Release 1   5/5/83
+PNX 10.1
+Spell
+

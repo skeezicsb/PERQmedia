@@ -1,0 +1,535 @@
+
+------------------------------------------------------
+POS.LOADBOOT.FLOPPY                 |        680010-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS F.15 Load Boot Floppy (Bootable)                  
+
+Run @INITDISK to prepare a new hard disk install
+Use @LOADDISK to install or upgrade an existing disk
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+POS.RUNBOOT.FLOPPY                  |        680040-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS F.15 Run Boot Floppy (Bootable)                   
+
+Minimal POS F.15 run floppy.                          
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+POS.FIXBOOT.FLOPPY                  |        680050-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS F.15 Fix Boot Floppy (Bootable)                   
+
+Contains filesystem repair tools.                     
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.PASLIB.BINARY                    |        680100-02
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Pascal Runtime Library (Binaries)                 
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.PASLIB.NONSOURCE                 |        680110-02
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Pascal Module Library (Headers)                   
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.PASLIB.SOURCE                    |        680300-02
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Pascal Module Library (Sources)                   
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.PASLIB.DOC                       |        680660-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Pascal Developer Documentation                    
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.SYSTEM.BINARY                    |        680120-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Essential System Components and Utilities (Binaries)
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.SYSTEM.SOURCE                    |        680320-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Essential System Components and Utilities (Sources)
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.SYSTEM.MISC                      |        680600-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Support Files (Required)                          
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.SYSTEM.DOC                       |        680620-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS System and Utilities Documentation                
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.UTILS.BINARY                     |        680130-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Standard Utility Programs (Binaries)              
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.UTILS.SOURCE                     |        680330-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Standard Utility Programs (Sources)               
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.MICROCODE.BINARY                 |        680150-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+System and QCode Interpreter Microcode (Binaries)     
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.MICROCODE.SOURCE                 |        680350-02
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+System and QCode Interpreter Microcode (Sources)      
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.EDITORS.BINARY                   |        680170-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Standard Text, Cursor and Font Editors (Binaries) 
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.EDITORS.SOURCE                   |        680370-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Standard Text, Cursor and Font Editors (Sources)  
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.DIAGNOSTICS.BINARY               |        680180-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ Diagnostic Programs                              
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+OS.DIAGNOSTICS.SOURCE               |        680380-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ Diagnostic Programs                              
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+PASCAL.COMPILER.BINARY              |        680200-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ Pascal Compiler V9.15 (Binaries)                 
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+PASCAL.COMPILER.SOURCE              |        680400-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ Pascal Compiler V9.15 (Sources)                  
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+PASCAL.UTILS.BINARY                 |        680220-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ Pascal Supplemental Utilities (Binaries)         
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+PASCAL.UTILS.SOURCE                 |        680420-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ Pascal Supplemental Utilities (Sources)          
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+MICROCODE.UTILS.BINARY              |        680240-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+Microcode Development Tools (Binaries)                
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+MICROCODE.UTILS.SOURCE              |        680440-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+Microcode Development Tools (Sources)                 
+
+Command Files: GET BUILD PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+DEMO.STD.BINARY                     |        680710-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Standard Demos (Binaries)                         
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+DEMO.STD.SOURCE                     |        680720-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Standard Demos (Sources)                          
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+DEMO.SIGGRAPH.BINARY                |        680730-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ SIGGRAPH Demos (Binaries)                        
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+DEMO.SIGGRAPH.DATA                  |        680735-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ SIGGRAPH Demos (Data files)                      
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+DEMO.SIGGRAPH.SOURCE                |        680740-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+PERQ SIGGRAPH Demos (Sources)                         
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.FONTS.MISC                  |        685000-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+POS Fonts (Optional)                                  
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.FONTS.MINT                  |        685010-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+Typesetting Fonts (Optional)                          
+
+Command Files: GET PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.EDITORS.PEPPER.BINARY       |        685020-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+The PEPPER Text Editor (Binaries)                     
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.EDITORS.PEPPER.SOURCE       |        685025-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+The PEPPER Text Editor (Sources)                      
+
+Command Files: GET BUILD PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.COMMS.KERMIT.BINARY         |        685040-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+The Kermit File Transfer Program (Binaries)           
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.COMMS.KERMIT.SOURCE         |        685045-01
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+The Kermit File Transfer Program (Sources)            
+
+Command Files: GET BUILD PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.APPS.PGRID.BINARY           |        685060-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+The PGRID Spreadsheet (Binaries)                      
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.APPS.PGRID.SOURCE           |        685065-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+The PGRID Spreadsheet (Sources)                       
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.GAMES.BINARY                |        685200-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+Games and Amusements (Binaries)                       
+
+Command Files: GET PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.GAMES.SOURCE                |        685220-00
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+Games and Amusements (Sources)                        
+
+Command Files: GET BUILD PUT                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+
+------------------------------------------------------
+CONTRIB.GAMES.RASTEROIDS            |        685240-02
+22-Feb-2023 05:05 GMT               |         POS F.15
+Double-sided, Single-density        |    Disk __ of __
+
+User-contributed game Rasteroids (Binaries and Sources)
+
+Command Files: GET BUILD PUT INSTALL                             
+
+Copyright (C) 1983, Three Rivers Computer Corporation 
+Repackaged in 2023, Boondoggle Heavy Industries, Ltd. 
+------------------------------------------------------
+

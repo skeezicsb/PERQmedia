@@ -1,0 +1,45 @@
+
+	    POS F.15 with Amendment 1
+	Floppy distribution set, 21-Feb-2023
+
+POS.LOADBOOT.FLOPPY                 |        680010-01
+POS.RUNBOOT.FLOPPY                  |        680040-01
+POS.FIXBOOT.FLOPPY                  |        680050-01
+OS.PASLIB.BINARY                    |        680100-02
+OS.PASLIB.NONSOURCE                 |        680110-02
+OS.SYSTEM.BINARY                    |        680120-00
+OS.UTILS.BINARY                     |        680130-00
+OS.MICROCODE.BINARY                 |        680150-01
+OS.EDITORS.BINARY                   |        680170-00
+OS.DIAGNOSTICS.BINARY               |        680180-00
+PASCAL.COMPILER.BINARY              |        680200-00
+PASCAL.UTILS.BINARY                 |        680220-00
+MICROCODE.UTILS.BINARY              |        680240-00
+OS.PASLIB.SOURCE                    |        680300-02
+OS.SYSTEM.SOURCE                    |        680320-00
+OS.UTILS.SOURCE                     |        680330-00
+OS.MICROCODE.SOURCE                 |        680350-02
+OS.EDITORS.SOURCE                   |        680370-00
+OS.DIAGNOSTICS.SOURCE               |        680380-00
+PASCAL.COMPILER.SOURCE              |        680400-00
+PASCAL.UTILS.SOURCE                 |        680420-00
+MICROCODE.UTILS.SOURCE              |        680440-00
+OS.SYSTEM.MISC                      |        680600-01
+OS.SYSTEM.DOC                       |        680620-01
+OS.PASLIB.DOC                       |        680660-01
+DEMO.STD.BINARY                     |        680710-00
+DEMO.STD.SOURCE                     |        680720-00
+DEMO.SIGGRAPH.BINARY                |        680730-00
+DEMO.SIGGRAPH.DATA                  |        680735-00
+DEMO.SIGGRAPH.SOURCE                |        680740-00
+CONTRIB.FONTS.MISC                  |        685000-00
+CONTRIB.FONTS.MINT                  |        685010-00
+CONTRIB.EDITORS.PEPPER.BINARY       |        685020-01
+CONTRIB.EDITORS.PEPPER.SOURCE       |        685025-01
+CONTRIB.COMMS.KERMIT.BINARY         |        685040-01
+CONTRIB.COMMS.KERMIT.SOURCE         |        685045-01
+CONTRIB.APPS.PGRID.BINARY           |        685060-00
+CONTRIB.APPS.PGRID.SOURCE           |        685065-00
+CONTRIB.GAMES.BINARY                |        685200-00
+CONTRIB.GAMES.SOURCE                |        685220-00
+CONTRIB.GAMES.RASTEROIDS            |        685240-02

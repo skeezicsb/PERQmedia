@@ -1,0 +1,1042 @@
+
+
+
+
+
+
+
+
+
+
+
+
+                           POS Version F.15
+                              Amendment 1
+                             Release Notes
+
+
+
+
+
+                             S. Boondoggle
+
+
+
+
+
+
+
+
+
+
+
+
+    This document contains notes and late-breaking news related to
+    version F.15 of the PERQ Operating System.
+
+
+
+
+
+
+
+
+
+    Copyright (C) 2013-2023
+    Boondoggle Heavy Industries, Ltd.
+    1060 West Addison
+    Chicago, IL 60613
+    (800) 555-1212
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+
+
+
+
+
+
+
+
+
+
+     This  document  is  not  to  be  reproduced  in  any form or
+     transmitted in whole or in part, without the  prior  written
+     authorization of Boondoggle Heavy Industries, Ltd.
+
+     The  information  in  this  document  is  subject  to change
+     without notice and should not be construed as  a  commitment
+     by  Boondoggle  Heavy Industries, Ltd.  The Company  assumes
+     no responsibility for any errors that  may  appear  in  this
+     document.
+
+     Boondoggle Heavy Industries, Ltd. will  make every effort to
+     keep customers apprised  of  all  documentation  changes  as
+     quickly as possible.  The Reader's Comments card is distrib-
+     uted with this document to request  users'  critical  evalu-
+     ation to assist us in preparing future documentation.
+
+
+
+
+
+     PERQ was a trademark of Three Rivers Computer Corporation.
+
+     Boondoggle Heavy Industries, Ltd. is one tiny subsidiary of
+     the burgeoning Boondoggle family of companies, which exists
+     solely in my head.  For now.  Be afraid.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                - ii -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+Table of Contents
+
+
+1.  Preface                                                            1
+1.1.  Intended Audience                                                1
+1.2.  PERQemu                                                          1
+1.3.  Additional Resources                                             1
+
+2.  System Hardware Requirements                                       2
+2.1.  Emulated Hardware Support                                        2
+
+3.  Introduction                                                       3
+3.1.  Project History and Goals                                        3
+3.2.   Contents                                                        4
+3.2.1.  Changes for Amendment 1                                        4
+3.3.    Getting Started                                                4
+3.3.1.  Logging On                                                     5
+3.3.2.  Online Help                                                    5
+3.3.3.  Logging Off                                                    6
+
+4.  Release Notes                                                      7
+4.1.  New Features                                                     7
+4.1.1.  Default Directory Structure                                    7
+4.1.2.  Source Code Cleanup                                            8
+4.1.3.  Microcode Updates                                              9
+4.1.4.  Interpreter Placement Changes                                 10
+4.1.5.  Pascal Compiler Update                                        10
+4.1.6.  Pascal Development Tools                                      10
+4.1.7.  Pascal Library Changes                                        11
+4.1.8.  Incompatible Library Changes                                  12
+4.1.9.  Expanded SearchList                                           12
+4.1.10.  FontEd and CursDesign                                        12
+4.1.11.  Utility Updates                                              13
+4.1.11.1.  MAKEDIR                                                    13
+4.1.11.2.  SETSEARCH                                                  13
+4.1.11.3.  DETAILS                                                    13
+4.1.11.4.  PERQ.FILES                                                 13
+4.1.12.  Utility Pathname Changes                                     13
+
+5.0.  Release History and Roadmap                                     14
+5.1.  Release F.16                                                    14
+5.2.  Release F.18                                                    14
+5.3.  Release F.22                                                    14
+5.4.  Release F.35                                                    14
+
+
+
+
+
+
+
+
+
+
+
+                               - iii -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+1.  Preface
+
+
+Release F.15 of the PERQ Operating System (POS) is an  upward-compatible
+version of POS F.1,  released by the long-defunct  Three Rivers Computer
+Corporation in  late 1982.   As the  first new POS release  in nearly 30
+years, this version is unique in that it was developed and tested almost
+entirely on an emulated PERQ.   In 2022, POS F.15 was verified on a real
+PERQ-1!  Amendment 1 addresses a minor patch to correct a spurious error
+message.  A roadmap for future POS F releases is included as an appendix.
+
+
+
+1.1.  Intended Audience
+
+
+This document describes  changes to and potential incompatibilities with
+previous POS versions as well as the  numerous improvements incorporated
+into F.15.  It is assumed  that the reader has some familiarity with POS
+and the operation of the PERQ hardware,  or has some experience with the
+basic operation of PERQemu,  the software emulator.  For new users,  POS
+documentation  is included  with the full installation,  or is available
+on the web (see Additional Resources, below).
+
+
+1.2.  PERQemu
+
+
+PERQemu  is a freely available,  software-only  emulation of the  PERQ-1
+written in C# / .NET for Microsoft Windows.  It also runs under Mono for
+Linux or Mac OS X, and possibly other Unix-compatible operating environ-
+ments.  As there are very few surviving PERQ computers left in the world,
+the  emulator  provides  a fully-compatible  development and  deployment
+environment for those interested in exploring and preserving this unique
+and historically significant computing platform.
+
+PERQemu is available for download from github.com/skeezicsb/PERQemu.
+
+
+
+1.3.  Additional Resources
+
+
+This is the first POS release since the creation of the  World Wide Web.
+Additional resources such as documentation  and software updates,  user-
+contributed software, downloads of future releases and  up-to-the-minute
+news will be available online at <TBD>.
+
+A very useful archive of PERQ documentation and software is available
+through the Bitsavers Archive, at http://www.bitsavers.org.
+
+The PERQemu and POS F.15 release maintainer can be reached via email at
+"skeezicsb@gmail.com".
+
+
+                                - 1 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+2.  System Hardware Requirements
+
+
+POS F.15 supports the following PERQ hardware:
+
+    *   CPU:  PERQ-1 (4K) or -1A (16K);
+
+    *   MEM:  512KB, 1MB or 2MB Memory board;
+
+        o   Portrait display (768 x 1024);
+
+    *   IOB:  Standard IO Board (Z80 version 8.x);
+
+        o   12- or 24MB Shugart hard disk drive;
+
+        o   1MB Shugart floppy disk drive;
+
+        o   PERQ-1 keyboard;
+
+        o   Kriz tablet and BitPad One GPIB pointing devices;
+
+        o   RS-232 serial port;
+
+    *   Most devices and peripherals compatible with POS F.1.
+
+
+INCLUDED, but NOT TESTED in this release:
+
+    *   OIO:  Drivers and diagnostics for Option IO boards:
+
+        o   PERQ Link;
+
+        o   10Mhz Ethernet.
+
+
+NOT INCLUDED in this release:
+
+    *   OIO:  Software support for Option IO boards:
+
+        o   Canon laser printer;
+
+        o   QIC streaming tape.
+
+
+
+2.1.  Emulated Hardware Support
+
+
+POS F.15 runs under PERQemu v0.4.0 and later in the above configurations.
+As PERQemu does not yet  fully support the Option IO boards (any flavor),
+all program interchange is via serial port or floppy diskette.
+
+
+
+
+                                - 2 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+3.  Introduction
+
+
+3.1.  Project History and Goals
+
+
+POS Version F.15 is the  culmination of a  peculiar set of decisions and
+circumstances.   Ultimately, however, it came down to a desire to  honor
+the  people who created the PERQ  by gathering up as much  of the source
+code as I could find, to present it to a new generation.
+
+In sum  there are nearly 215,000 lines  of Pascal, microcode and commen-
+tary here,  bundled into  a new code branch  that I plan to  continue to
+develop  over time.   A roadmap  for future POS F releases  is presented
+later in this document.
+
+Some of the factors that contributed to this release include:
+
+    *   The desire to upgrade my PERQ from F.0,  in order to install
+        important  Ethernet fixes  in an attempt to  archive my hard
+        disk over the network (rather than RS-232);
+
+    *   My POS F.1 floppy media  was on loan and unavailable,  and I
+        did not (at the time) have access to the POS G source code;
+
+    *   Two of my working PERQs, and PERQemu, support only the older
+        Z80 protocol, so staying with the POS F branch made sense;
+
+    *   A renewed interest in  microcoding led to the development of
+        a replacement for the original  line drawing microcode,  and
+        the incorporation of newer RasterOp microcode as well;
+
+    *   A desire to rediscover and preserve the highly arcane art of
+        building a new POS from the ground up, something that nobody
+        else on Earth possibly cares about anymore -- purely for the
+        hack value -- and "because it was there!"
+
+For these somewhat silly reasons and more I embarked upon a line-by-line
+code review and stylistic  clean up,  partly aided by  some Perl scripts,
+and ended up spending nearly  two years in my off hours  developing F.15,
+using it to test and debug the missing features of the 16K CPU emulation
+in PERQemu, such as the Multiply/Divide unit and the RasterOp pipeline.
+
+Mostly, though, I wanted to make it  beautiful.  The PERQ  was my "first
+love" in computing, and over the decades remained a passion -- much more
+than just a hobby.   I dedicate the efforts here  to the people at Three
+Rivers Computer Corporation, who designed and built "a landmark computer
+system."  They inspired me to learn to program and embark upon a 25-year
+career in programming and  systems administration.   Having  retired now
+(from that deeply unhealthy industry),  I do this  purely for the joy of
+it -- keeping the old PERQs alive has made computing fun again.
+
+
+
+
+                                - 3 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+3.2.   Contents
+
+
+POS F.15 is being released  for use with PERQemu  in the form of virtual
+Shugart 24MB hard disk images.  These are pre-loaded and ready-to-run in
+two configurations:
+
+    *   f15.phd     - Basic binary-only release, with a selection of
+                      demos and applications to try, but without all
+                      of the development tools and source code;
+
+    *   f15dev.phd  - Full release including source code, Pascal and
+                      microcode development tools,  user-contributed
+                      games,  fonts and applications, documentation,
+                      and two sets of demos.
+
+The ".phd"  (PERQ Hard Disk) format  may also  be read  by the  PERQdisk
+utility,  which may  be used to extract  its contents into  files in the
+host filesystem.
+
+In addition, a ZIP or Unix tar/gzip archive containing the  complete set
+of  DSSD floppy diskette images  is provided.  POS F.15  is self-hosting
+and may be installed from floppy images onto a new, blank Shugart image.
+This is mostly automated, but not yet documented.  Caveat Perqor.
+
+Floppy images are named ".pfd" (PERQ Floppy Disk), and are essentially a
+"raw" floppy image with a special embedded magic cookie.  A utility such
+as RAW2IMD or RAW2DMK can be used to convert the .pfd file into a format
+that can be written to a real 8" floppy diskette,  provided you have the
+necessary hardware to perform such a transfer.
+
+
+3.2.1   Changes for Amendment 1
+
+
+POS F.15 Amendment 1  is distributed in the new "PERQMedia" format, with
+hard disk  and floppy  image files  using the  ".prqm"  extension.  This
+replaces both the ".phd"  and ".pfd" types mentioned above.  These files
+are directly supported by PERQemu v0.4.6  and beyond, and can be read by
+the PERQdisk  utility.  They  can be easily transcoded  by PERQdisk into
+the older formats if you still prefer to run the older PERQemu v0.4.4.
+
+PERQdisk can be downloaded from https://github.com/skeezicsb/PERQdisk.
+
+
+3.3.    Getting Started
+
+
+Unpack the  F.15 disk images into your  PERQemu `Disks' folder.   Floppy
+images are typically placed in  a separate  `Floppies' folder,  but this
+is not required  (they can reside  in the `Disks' folder  with the  hard
+disk images).
+
+
+
+                                - 4 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+Launch PERQemu in the manner appropriate for your platform (double-click
+the program icon on Windows;  invoke "mono" from  the Unix command line),
+then use the "load harddisk" command to read in the disk image.  The POS
+default boot letter "a" is preconfigured,  so simply type  "go" to start
+the emulator.
+
+Floppy images are loaded with the  "load floppy" command  in the PERQemu
+debugger (the DOS or Unix command-line).  Two types of PERQ floppies are
+provided:  bootable POS filesystem floppies ("Load Boot" and "Fix Boot"),
+as well as a collection of RT-11 compatible data floppies.  They all use
+the same ".prqm" file extension, however. The file "labels.txt" contains
+descriptions of each floppy image included in the archive.
+
+As is  standard procedure on the PERQ,  a capital boot letter is used to
+boot from floppy.  In PERQemu, load the "load boot" or "fix boot" image,
+then type the command  "bootchar A" (case is significant).  Type "go" to
+start the  emulator.  As with the hardware,  a floppy boot  will  take a
+bit longer than a normal hard disk boot  (there is no "fast boot" floppy
+for F.15 yet).   After the usual VFY display,  the DDS will seem to hang
+at 151 for quite some time; depending on the speed of the host computer,
+several  minutes may be required.  However, once booted POS running from
+floppy  behaves just as  it does from  the hard disk,  albeit with fewer
+programs and some restrictions (no pop-up menus).
+
+F.15 includes two bootable floppies: a "load boot" floppy which contains
+the programs  and command files  needed to bootstrap  a new hard disk or
+upgrade  an existing one.  The "fix boot" floppy  contains programs that
+can be used to repair a corrupted or broken disk or partition.
+
+
+3.3.1.  Logging On
+
+
+When booting from floppy, `guest' is the only user name  accepted by the
+Login program.   When prompted  for a  user name,  you may  simply press
+<RETURN>  for the default.   There is generally  very little  free space
+available on the boot floppies  and it recommended that  they be treated
+as if they are "read only."
+
+For the  F.15 hard disk  images, `guest' is  the only  user provided  by
+default, but you may add your own accounts with the UserControl program.
+In POS, user home directories may be placed in any partition,  though by
+convention the `sys:user>' partition  is typically used for  user files.
+The default home directory path for POS F.15 is `sys:user>guest>'.
+
+
+3.3.2.  Online Help
+
+
+The F.15 hard disk image is pre-loaded with all of the available POS F.1
+documentation  and help files.  To access  help from  the shell,  simply
+type `HELP' or press the HELP key on the keyboard  (F1 in PERQemu).  The
+
+
+
+
+                                - 5 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+interactive  HELPER program  is self-explanatory.  Most of  the standard
+POS utility programs also accept the `/HELP' command-line switch.
+
+Other preformatted documentation is available in sys:boot>docs>.  On the
+developer  disk image, programming  documentation  is in  sys:dev>docs>.
+These are the POS F.1 documents,  provided for reference.  The  TYPEFILE
+program is used to view files on the screen, one page at a time.
+
+When the source files for these documents have been found (or recreated) 
+and the 3PROSE (formatting program) source is made available, the online
+docs will be updated.  This is slated for inclusion in the F.16 release;
+see the roadmap for more information.
+
+
+3.3.3.  Logging Off
+
+
+The hard disk images  include the BYE utility,  which is used to log out
+of POS and (optionally) power off the machine.  While it is not strictly
+necessary to log out,  it is encouraged  as BYE will perform some house-
+keeping functions when run.
+
+Note that if you use the ``/OFF'' switch with PERQemu, the emulator will
+drop into the debugger to give you a chance to  save the hard disk image
+(if you want to save any changes made during the session) before exiting
+the program.  Or you may type "reset"  to reboot the virtual PERQ.   See
+the PERQemu documentation for more information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                - 6 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+4.  Release Notes
+
+
+4.1.  New Features
+
+
+POS F.15 is built from the POS F.1 source code,  with a few enhancements
+and changes.  Future releases will expand upon some of these changes.
+
+
+4.1.1.  Default Directory Structure
+
+
+POS is generally contained in one partition, with very little structure;
+essentially the entire release gets dumped into sys:boot>.  In F.15 I've
+introduced a somewhat Unix-like structure to help organize things a bit.
+
+In the default installation, the root partition is still sys:boot>.  The
+rest of the OS is now separated into several subdirectories:
+
+    sys:boot>bin>       Contains the .SEG and .RUN files for the
+                        system and utility programs.  Stores the
+                        .BIN and  .BOOT/.MBOOT files  (microcode
+                        binaries) as well.
+
+    sys:boot>lib>       Contains the .SEG and .PAS files  (stubs
+                        only) that  make up the  standard Pascal
+                        Module Library.  The .SEG files  are re-
+                        quired;  if you  are not  doing software
+                        development, the .PAS files are not.
+
+    sys:boot>etc>       Miscellaneous supporting files including
+                        the default  System.15.Config  file used
+                        by Makeboot, various cursors used by the
+                        Shell and utilities, the Default.Profile
+                        and System.Users files used by Login and
+                        UserControl,  and  other  "housekeeping"
+                        files.  Command files for creating boot-
+                        able floppies are here too.
+
+    sys:boot>fonts>     Fonts for POS  are stored in .KST files;
+                        these are  collected in one place.   The
+                        FontEd  utility  is provided  by default
+                        in F.15  (was part of the "User Library"
+                        from 3RCC).
+
+    sys:boot>docs>      Formatted documentation.  In the initial
+                        release,  these .DOC files are from F.1.
+
+    sys:boot>tmp>       Temporary files,  such as the swap files
+                        used by the Pepper text editor, are kept
+                        here.
+
+
+
+                                - 7 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+User files are, by convention, kept in a separate `sys:user>' partition.
+In POS F.15, the default "guest" user is the only user account provided;
+others may be  created using the  UserControl utility.
+
+    sys:user>guest>     Default user home directory.
+
+
+For a full POS source installation, a large :dev> partition is required,
+as the source code requires quite a bit of disk space:
+
+    sys:dev>bin>        Binary files for the supplemental Pascal
+                        utilities.  These include PMake, PasMac,
+                        and Booster, all of which are experimen-
+                        tal or  user-contributed and  were never
+                        part of the official POS releases.
+
+    sys:dev>src>        Source code  for F.15.  Includes  Pascal
+                        and microcode source for everything inc-
+                        luded in the release.
+
+    sys:dev>docs>       Reference documentation for the standard
+                        Pascal library, compiler, and all of the
+                        development tools.
+
+Finally, demos, games and other contributed software is kept by default
+in the :extra> partition.  This is where the fun stuff lives:
+
+    sys:extra>games>    A number of entertaining and challenging
+                        games are installed here.
+
+    sys:extra>stddemo>  The "standard" POS demo programs.  These
+                        are standalone programs that demonstrate
+                        the graphics capabilities of the PERQ.
+
+    sys:extra>sigdemo>  The amazing self-running booth demo from
+                        SIGGRAPH '82.  See the file DEMO.DOC for
+                        information on starting the demo.
+
+    sys:extra>contrib>  User-contributed software source.  Init-
+                        ially includes Kermit  (a popular serial
+                        communications and file transfer program)
+                        and Pepper,  an EMACS-like editor.  (The
+                        binaries for these are usually installed
+                        in sys:boot>bin>.)
+
+
+4.1.2.  Source Code Cleanup
+
+
+All of  the source code  included in  POS F.15 has been  reformatted and
+cleaned up to use a set of consistent coding standards, to enhance read-
+ability and ease efforts  to improve and expand  the code base in future
+releases.  Due to the  wide differences in  personal coding styles  used
+by the  original programmers,  some of the  source files  were extremely
+
+
+                                - 8 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+difficult to parse;  some automated Perl scripts and scrupulous line-by-
+line review  by the release maintainer  represent a good first effort at
+making the POS source base more maintainable.
+
+Three Rivers Computer  employed  a set of  documentation standards  that
+allowed a program  to parse  each file  and generate the  Pascal Library
+documentation automatically;  that program has not been found (yet),  so
+the file  sys:dev>docs>PasLib.Doc is out-of-date.  For the most part the
+API remains the same;  however, there are some crucial changes that will
+be documented below (or more fully in the next release).  It is expected
+that the documentation generator ("Virgil"?) will be found, or an equiv-
+alent will be written.
+
+Microcode sources  were similarly  updated,  with  the exception  of two
+micro-programs that are not high on the priority list:
+
+    *   Boot.Micro is the program burned into the PERQ Boot PROM
+        (read from the PROM folder in PERQemu);
+
+    *   Krnl.Micro is used by ODTPrq to assist in debugging mic-
+        rocode, using  two PERQs  connected by  PERQlink cables.
+        There is currently  no emulation of the link board func-
+        tionality in PERQemu.
+
+These files will be cleaned up as time permits, but are included in F.15
+for historical interest.  The code is provided as-is.
+
+
+4.1.3.  Microcode Updates
+
+
+POS F.15 incorporates two changes to the standard Q-machine interperter,
+PERQ.Micro:
+
+    *   RasterOp (RO.Micro) was updated to the  latest available
+        version to correct a few memory timing issues, and a re-
+        working  of the  register allocation  and initialization
+        routine freed up a register and some instruction slots;
+
+    *   Line.Micro was replaced by new module (Draw.Micro) which
+        provides  routines to  draw points,  lines,  and circles
+        (filled or unfilled).
+
+In this initial release the new Draw features are not "public"; DrawLine
+is invoked through the standard LINE Q-code, called by the standard Line
+procedure in module Screen.
+
+The new  DrawLine function  is slightly faster  than the old  routine in
+most situations,  but is optimized for  faster horizontal lines -- which
+allows for drawing  filled circles very quickly.  In the next release, a
+new Pascal  Library module  will provide  a public API for accessing the
+drawing functions,  and may evolve  toward providing  a "QuickDraw-like"
+set of graphics primitives for POS.  (See the roadmap, below.)
+
+
+                                - 9 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+4.1.4.  Interpreter Placement Changes
+
+
+The standard PERQ.Micro and IO.Micro placement has been changed and some
+small first efforts made to clean up the .Dfs files (used to share entry
+points with Pascal modules).  The undocumented "DrawByte" routine,  used
+by the Editor, TypeFile  and user-contributed Rasteroids game remains at
+address #4010(octal).  This will change in a future release, as DrawByte
+will be moved  into Draw.Micro  and made accessible  through a supported
+Pascal Library module.
+
+                             ** WARNING **
+
+    If your program uses  hard-coded entry points,  called using
+    InLineByte(JCS) or the JumpControlStore() procedure, it will
+    almost certainly require an update to work with F.15.
+
+
+The standard  Qcode interpreter  and IO microcode  for F.15 does not use
+the  upper banks  in the  16K CPU, so the  same version of  PERQ.Bin and
+IO.Bin will boot on any CPU.  This may change in a future release.
+
+
+
+4.1.5.  Pascal Compiler Update
+
+
+The PERQ Pascal Compiler has been updated to version 9.15.  This version
+is a fairly major step up from the V7.0 compiler included in earlier POS
+F releases.   It includes a number of bug fixes,  as well as support for
+longer identifiers  (14 characters).   Note that this  may necessitate a
+careful  review  of your  source code  for inadvertent bugs;  all of the
+Pascal sources included in the release have been updated to build clean-
+ly with the new compiler.
+
+Pascal V9.15 as provided can be built using the older V7.0 compiler, and
+can build itself using a two-phase build process.  The Q-code version is
+unchanged from POS F.0/F.1  (Q-code V3).   The QDis disassembler is also
+included.
+
+
+
+4.1.6.  Pascal Development Tools
+
+
+An optional  supplemental package of  Pascal development tools  is avail-
+able.   Although these tools  have undergone a first pass  at the source
+code cleanup and documentation effort as the rest of the release,  these
+tools were not generally released by 3RCC, and as such they may have dif-
+ferent command-line parsing  or option handling.  They have not yet been
+extensively tested under F.15.
+
+
+
+
+                                - 10 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+The packages are:
+
+    *   PMake, a  "poor man's Make"  utility.  Aids in  the com-
+        pilation of large or complex programs;
+
+    *   PasMac,  a macro preprocessor  for Pascal.   Used exten-
+        sively in the Accent environment,  this wasn't generally
+        available for POS F;
+
+    *   Booster, a Q-code optimizer.  Can rewrite  .SEG files to
+        improve execution speed  of compiled programs.   Has not
+        been extensively tested, and should be considered highly
+        experimental.
+
+These utilities are installed in sys:dev>bin> by default.
+
+
+
+4.1.7.  Pascal Library Changes
+
+
+Several small changes  to the standard  Pascal Library are introduced in
+F.15.  These  may require recompilation or relinking  of programs ported
+from other POS versions.
+
+Changes include:
+
+    Module Lights:
+        Changed the geometry to optimize RasterOp efficiency and
+        slightly  reduce overhead.   Plus, I like  blinky lights,
+        so I enabled the light for disk access.
+
+    Module PERQ_String:
+        Included the Concat3 function (from Sail_String?), which
+        is a somewhat common case in many programs.
+
+    Module XScreen:
+        Incorporated into the  standard library.   Contains some
+        enhanced screen and font handling calls that are used by
+        several of the extra packages  (demos, the Font / Cursor
+        Editors, etc.) and may be extended in future releases to
+        supplement the standard Screen module. Subject to change.
+
+    Module CmdParse/PopCmdParse:
+        Return codes revamped and ErrorType changed from a plain
+        integer  (rather than an enumerated type).   The routine
+        CnvUpper, which  was marked  as "deprecated"  in POS F.0,
+        finally removed.  Use ConvUpper in PERQ_String instead.
+
+
+
+
+
+
+
+                                - 11 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+4.1.8.  Incompatible Library Changes
+
+
+The return codes for the CmdParse/PopCmdParse module have changed.  This
+was not considered lightly, as it will almost certainly break older pro-
+grams.  However,  the previous convention was  basically ridiculous; the
+error returned  was based on  the length of the  arguments array,  which
+changed from one program to the next.
+
+The error type was also changed to an integer, rather than an enumerated
+type,  so that the  return value may (if valid)  be used directly as the
+CmdArray index.   As integers in  PERQ Pascal are signed,  error returns
+from CmdParse are now  negative numbers (enumerated  as integer contants
+instead).  Thus the test for any return value from the CmdParse routines
+that used to be "numCmds + n"  is now simplified, and the "MaxCmds" con-
+stant may be increased.
+
+
+
+4.1.9.  Expanded SearchList
+
+
+The standard filesystem searchlist array has been expanded to 7 entries,
+two of which are reserved.   The system SetSearch utility  has also been
+greatly simplified, with all of the warnings and confusion about popping
+the last entry or pushing too many entries removed.
+
+The new behavior  is that the 1st entry is always the current directory,
+and an array slot is always  reserved for that purpose.   The last entry
+(also reserved) is the default path to the bin> directory on the current
+boot device and partition. The five intervening slots are free for users
+to use without restriction.
+
+This makes it much harder  to remove the path  containing Shell.Run from
+your searchlist,  which is a silly thing to do anyway.  New constants in
+module FileSystem define the new/modified search list parameters.
+
+
+
+4.1.10.  FontEd and CursDesign
+
+
+The POS font  and cursor editors,  FontEd and CursDesign,  were never an
+officially supported product, but were instead provided to users through
+TRUST (the Three Rivers User SocieTy?). In POS F.15 they've been cleaned
+up and integrated into the release as part of the OS.EDITORS group.
+
+CursDesign also includes an experimental (and buggy) rotate command that
+allows rotating bitmaps through 360 degrees.
+
+
+
+
+
+
+                                - 12 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+4.1.11.  Utility Updates
+
+
+4.1.11.1.  MAKEDIR
+
+
+The MakeDir command  now includes a `/QUIET' switch,  useful for command
+files.  If the path given to MakeDir already exists (and is a directory)
+the utility exits quietly rather than complaining or trying to overwrite
+the directory.
+
+
+4.1.11.2.  SETSEARCH
+
+
+The SetSearch utility  now manipulates the extended system searchlist as
+described above.
+
+
+4.1.11.3.  DETAILS
+
+
+The Details utility  prints the  extended searchlist.  If  "pointing" is
+allowed, Details will now display which device  (Kriz Tablet or the GPIB
+BitPad)  is active.  Pointing device  maybe selected  through the user's
+login profile, or by the "/TABLETTYPE" switch to the Login program.
+
+
+4.1.11.4.  PERQ.FILES
+
+
+The PERQ.Files utility  (and the  database file it reads,  which has the
+same name!) are updated to reflect  the new version numbers and contents
+of the release.   However,  the command files produced  are likely to be
+inconsistent  with the media images  provided for F.15,  and will not be
+updated  or maintained  in future releases.  PERQ.Files will be replaced
+by a new, better packaging system, and its use is deprecated.
+
+
+
+4.1.12.  Utility Pathname Changes
+
+
+Utilities that access supplemental files (such as cursors, error message
+text, or other databases)  were updated to use the new default pathnames
+and directory structure.
+
+
+
+
+
+
+
+
+
+
+                                - 13 -
+
+
+POS Version F.15 Release Notes                             22 Feb 23
+
+
+
+5.0.  Release History and Roadmap
+
+
+The unreleased, retroactively-named POS F.14  was simply a collection of
+development efforts and experiments  designed to rediscover  and relearn
+the steps  needed to bootstrap a PERQ OS entirely from scratch.  I chose
+F.15 as a play on "half way between F.1 and F.2" (i.e. POS F1.5).  Since
+3RCC released F.2 as G.1 instead, I stuck with it because it would never
+be confused with  any official releases, and besides, fighter planes are
+cool.  So it follows that my F.35 release will be decades late, cost the
+taxpayers billions, and is already obsolete... perfect!
+
+The following roadmap for future follow-up POS F releases is nothing but
+pure speculation, wishful thinking, and blue sky estimates -- and should
+in NO way  be construed  as a promise  to implement anything.  That said,
+these are some of the ideas and loose plans for further enhancements and
+continued development of this POS branch, at least as long as PERQemu is
+limited to POS F (old Z80) and the PERQ-1.   (If/when PERQ-2 and new Z80
+support  is available under emulation,  most effort will likely shift to
+POS G and Accent development,  although the task of  cleaning up several
+hundred thousand more lines of code seems a bit daunting at this point.)
+
+
+5.1.  Release F.16
+
+    Package management
+    Drawing library module
+    Documentation cleanup
+    Diagnostics and additional packages
+
+
+5.2.  Release F.18
+
+    Shell command-line history and editing
+    Updated utility programs:
+        More consistent command-line parsing
+        Better on-line help
+        Ethernet support (as emulator allows)
+
+
+5.3.  Release F.22
+
+    Support for extended emulation features:
+        Shugart 48MB (SA4104) disk?
+        24-bit CPU, with extended 64K WCS option?
+        Landscape display and extended memory?
+
+
+5.4.  Release F.35
+
+    POS G integration?  (QCode V4)
+    EIO, multiple disks, MPOS?
+    Profits!!!
+
+
+                                - 14 -
+

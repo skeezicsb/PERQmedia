@@ -130,7 +130,7 @@ Table of Contents
 3.1.  Project History and Goals                                        3
 3.2.   Contents                                                        4
 3.2.1.  Changes for Amendment 1                                        4
-3.2.2.  Changes for Amendment 1                                        4
+3.2.2.  Changes for Amendment 2                                        4
 3.3.    Getting Started                                                5
 3.3.1.  Logging On                                                     6
 3.3.2.  Online Help                                                    6

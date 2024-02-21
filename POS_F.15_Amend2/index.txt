@@ -1,0 +1,14 @@
+
+	    POS F.15 with Amendment 2
+	Floppy distribution set, 20-Feb-2024
+
+The following floppies are new additions:
+
+OS.UTILS.STUT.BINARY                |        680132-00
+OS.UTILS.CANON.BINARY               |        680135-00
+OS.UTILS.STUT.SOURCE                |        680332-00
+OS.UTILS.CANON.SOURCE               |        680335-00
+
+These will be incorporated into the full distribution
+set with the future release of Amendment 3.
+

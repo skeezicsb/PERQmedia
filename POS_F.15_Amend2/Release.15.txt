@@ -49,7 +49,7 @@
     (800) 555-1212
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -111,7 +111,7 @@ POS Version F.15 Release Notes                             18 Feb 24
                                 - ii -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -173,7 +173,7 @@ Table of Contents
                                - iii -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -235,7 +235,7 @@ The PERQemu and POS F.15 release maintainer  can be reached via email at
                                 - 1 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -266,6 +266,8 @@ POS F.15 supports the following PERQ hardware:
 
         o   Canon laser printer (LBP-10 and LBP-CX);
 
+        o   STUT utility for the QIC streaming tape drive;
+
     *   Most devices and peripherals compatible with POS F.1.
 
 
@@ -276,11 +278,6 @@ INCLUDED, but NOT TESTED in this release:
         o   PERQ Link;
 
         o   10Mhz Ethernet.
-
-
-NOT INCLUDED in this release:
-
-    *   OIO:  Software support for QIC streaming tape.
 
 
 
@@ -294,10 +291,13 @@ all program interchange is via serial port or floppy diskette.
 
 
 
+
+
+
                                 - 2 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -359,7 +359,7 @@ it -- keeping the old PERQs alive has made computing fun again.
                                 - 3 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -421,7 +421,7 @@ that replaced the "CSDX" driver in POS F.   Three Rivers' "Print Server"
                                 - 4 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 package bundled additional services (FTP, remote printing, network time,
@@ -483,7 +483,7 @@ can be used to repair a corrupted or broken disk or partition.
                                 - 5 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -545,7 +545,7 @@ the PERQemu documentation for more information.
                                 - 6 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -607,7 +607,7 @@ rest of the OS is now separated into several subdirectories:
                                 - 7 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 User files are, by convention, kept in a separate `sys:user>' partition.
@@ -669,7 +669,7 @@ by the  original programmers,  some of the  source files  were extremely
                                 - 8 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -731,7 +731,7 @@ set of graphics primitives for POS.  (See the roadmap, below.)
                                 - 9 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -793,7 +793,7 @@ extensively tested under F.15.
                                 - 10 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -855,7 +855,7 @@ Changes include:
                                 - 11 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 
@@ -917,7 +917,7 @@ allows rotating bitmaps through 360 degrees.
                                 - 12 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 4.1.11.  Utility Updates
@@ -979,7 +979,7 @@ and directory structure.
                                 - 13 -
 
 
-POS Version F.15 Release Notes                             18 Feb 24
+POS Version F.15 Release Notes                             20 Feb 24
 
 
 

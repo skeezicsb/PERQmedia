@@ -13,3 +13,16 @@ include the Canon software.  The floppy images here are in the compressed
 ".prqm" format.  Amendment 3 is expected to be a full (and likely final)
 rebuild with some additional features and a new full media set.
 
+## Late breaking news!
+
+Two more floppies are here that have not yet been integrated into the full
+distribution:  the STUT utility binary (680132-00) and source (680332-00)
+now let POS F.15 access the tape streamer.  This means that a tape install
+option will soon be available for POS F.15, dramatically reducing the floppy
+swapping madness and greatly simplifying the installation of POS.
+
+Note that some of the POS G and Accent images come with STUT already loaded;
+this is a backport to the unique POS F.15 branch.  The _PERQemu_ documentation
+and F.15 Release Notes have not yet been updated to reflect this new addition.  The floppies are presented here for early access while development and testing
+continue.  Feedback is welcom.  Enjoy!
+

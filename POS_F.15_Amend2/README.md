@@ -23,6 +23,7 @@ swapping madness and greatly simplifying the installation of POS.
 
 Note that some of the POS G and Accent images come with STUT already loaded;
 this is a backport to the unique POS F.15 branch.  The _PERQemu_ documentation
-and F.15 Release Notes have not yet been updated to reflect this new addition.  The floppies are presented here for early access while development and testing
-continue.  Feedback is welcom.  Enjoy!
+and F.15 Release Notes have not yet been updated to reflect this new addition.
+The floppies are presented here for early access while development and testing
+continue.  Feedback is welcome.  Enjoy!
 

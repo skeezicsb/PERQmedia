@@ -2,9 +2,9 @@
             POS F.15 with Amendment 3
         Floppy distribution set, 30-May-2026
 
-POS.LOADBOOT.FLOPPY                 |        680010-01
+POS.RUNBOOT.FLOPPY                  |        680010-01
 POS.AMENDMENT3.FLOPPY               |        680020-00
-POS.RUNBOOT.FLOPPY                  |        680040-01
+POS.LOADBOOT.FLOPPY                 |        680040-01
 POS.FIXBOOT.FLOPPY                  |        680050-01
 OS.PASLIB.BINARY                    |        680100-02
 OS.PASLIB.NONSOURCE                 |        680110-02
